@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav a{
+            color: black;
+            text-decoration: none;
+        }
+        #first{
+            height: 30px;
+            width: 60px;
+            background-color: aqua;
+            margin: 70px;
+            border-radius: 20px;
+        }
+        #second{
+            height: 30px;
+            width: 60px;
+            background-color: aqua;
+            margin: 70px;
+            border-radius: 20px;
+        }
+        #third{
+            height: 30px;
+            width: 60px;
+            background-color: aqua;
+            margin: 70px;
+            border-radius: 20px;
+        }
+        #forth{
+            height: 30px;
+            width: 60px;
+            background-color: aqua;
+            margin: 70px;
+            border-radius: 20px;
+        }
+        #fifth{
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+            border-radius: 10px;
+        }
+        .boxs{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            margin: 10px;
+            display: inline-block;
+            border: black 5px;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            margin: 10px;
+        }
+        #box4{
+            position: fixed;
+            right: 10px;
+        }
+        #box2{
+            z-index: 2;
+            position: absolute;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header><nav>
+        <a href="#" id="first">Home</a>
+        <a href="#" id="second">About</a>
+        <a href="#" id="third">Index</a>
+        <a href="#" id="forth">Back</a>
+    </nav></header>
+    <main>
+        <div id="fifth">Second</div>
+        <div id="container">
+            <div id="box1" class="boxs">Box 1</div>
+            <div id="box2" class="boxs">Box 2</div>
+            <div id="box3" class="boxs">Box 3</div>
+        </div>
+    </main>
+    <footer>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt nostrum excepturi a enim vitae quam asperiores? Atque, sapiente suscipit.</footer>
+</body>
+</html>

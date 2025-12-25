@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .Animate{
+            height: 100px;
+            width: 100px;
+            background-color: burlywood;
+            border: 2px solid black;
+            border-radius: 5px;
+            position: relative;
+            top: 50px;
+            left: 10px;
+
+            animation: Move;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            /*animation: Move 2s ease-in-out 0s infinite alternate;*/
+        }
+
+        @keyframes Move {
+            from{left: 10px;}
+            to{left: 1000px;}
+        }
+
+        .box2{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            border: 2px solid black;
+            border-radius: 5px;
+            position: relative;
+            top: 50px;
+            left: 10px;
+
+            animation: Round;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            /*animation: Move 2s ease-in-out 0s infinite alternate;*/
+        }
+
+        @keyframes Round {
+            0%{left: 10px;}
+            60%{top: 200px;}
+            80%{left: 700px;}
+            100%{bottom: 1000px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="Animate">Animation</div>
+    <div class="box2">Box2</div>
+</body>
+</html>
